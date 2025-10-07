@@ -193,15 +193,17 @@ button:active {
    Theme Toggle Button
 ========================== */
 #theme-toggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
-  padding: 0.5rem 1rem;
+  position: fixed;       /* always visible */
+  bottom: 1rem;          /* distance from bottom */
+  left: 1rem;            /* distance from left */
+  z-index: 1000;         /* stay above other elements */
+  width: auto;           /* don’t stretch across */
+  height: 2rem;           /* compact height */
+  padding: 0 0.6rem;     /* small horizontal padding */
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.85rem;    /* smaller text */
   background-color: var(--accent);
   color: #000;
   font-weight: 700;
@@ -213,5 +215,5 @@ button:active {
 }
 
 #theme-toggle:active {
-  transform: scale(0.98);
+  transform: scale(0.95); /* subtle press effect */
 }
