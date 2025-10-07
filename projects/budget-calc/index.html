@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Budget Calculator </title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1> 💰 Budget Calculator </h1>
+  <p class="notice">
+    Quickly estimate your budget and required savings.<br>
+    Optimized for mobile use — thumb-ready, worry-free.
+  </p>
+
+  <div class="container">
+    <label> Average Monthly Expenses ($)</label>
+    <input type="number" id="expenses" placeholder="e.g. 4000" inputmode="decimal">
+
+    <label> Months You Want to Cover </label>
+    <input type="number" id="months" placeholder="e.g. 6" inputmode="numeric">
+
+    <label> Recurring Monthly Income ($) </label>
+    <input type="number" id="income" placeholder="e.g. 800" inputmode="decimal">
+
+    <button onclick="calculateBudget()"> Calculate </button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <!-- jsPDF library for generating PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
