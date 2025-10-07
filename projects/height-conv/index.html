@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Height Converter </title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body>
+    <button id="theme-toggle"></button>
+
+    <h1> 📏 Height Converter </h1>
+    <p class="notice">
+      Convert between metric (cm/m) and imperial (ft/in) in real time. <br>
+      Optimized for mobile — quick, simple, thumb-ready.
+    </p>
+
+    <div class="container">
+      <label> Height in centimeters </label>
+      <input type="number" id="height-cm" placeholder="e.g. 180" inputmode="decimal">
+
+      <label> Height in feet/inches </label>
+      <input type="text" id="height-ft" placeholder="e.g. 5'11&quot;">
+
+      <div class="result" id="result"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/js/theme.js"></script>
+    <script src="/js/height-converter.js"></script>
+  </body>
+</html>
