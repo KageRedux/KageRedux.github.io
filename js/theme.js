@@ -11,7 +11,7 @@ function updateToggleButtonText() {
   const toggle = document.getElementById("theme-toggle");
   if (!toggle) return;
   const current = document.documentElement.getAttribute("data-theme");
-  toggle.textContent = current === "dark" ? "🌙 Dark Mode" : "☀️ Light Mode";
+  toggle.textContent = current === "dark" ? "🌙" : "☀️"; // Short symbols
 }
 
 // Initialize toggle button text
@@ -21,6 +21,17 @@ updateToggleButtonText();
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("theme-toggle");
   if (!toggle) return;
+
+  // Move the button to bottom-left dynamically
+  toggle.style.position = "fixed";
+  toggle.style.bottom = "1rem";
+  toggle.style.left = "1rem";
+  toggle.style.width = "3rem";
+  toggle.style.height = "3rem";
+  toggle.style.padding = "0";          // Keep it compact
+  toggle.style.borderRadius = "0.5rem";
+  toggle.style.fontSize = "1.2rem";    // readable but small
+  toggle.style.zIndex = "1000";
 
   toggle.addEventListener("click", () => {
     const current = document.documentElement.getAttribute("data-theme");
