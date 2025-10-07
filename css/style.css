@@ -192,12 +192,12 @@ button:active {
 /* ==========================
    Theme Toggle & Home Button Placement
 ========================== */
-#theme-toggle {
+#theme-toggle,
+#home-button {
   position: fixed;         /* always visible */
   bottom: 1rem;            /* distance from bottom */
-  left: 1rem;              /* distance from left */
   z-index: 1000;           /* stay above other elements */
-  padding: 0.35rem 0.75rem;/* slightly smaller, thumb-friendly */
+  padding: 0.35rem 0.75rem;/* thumb-friendly */
   border-radius: 0.4rem;
   border: none;
   cursor: pointer;
@@ -208,55 +208,37 @@ button:active {
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-#theme-toggle:hover {
-  background-color: var(--accent-light);
+/* Positioning individually */
+#theme-toggle {
+  left: 1rem;
 }
 
-#theme-toggle:active {
-  transform: scale(0.95);
-}
-
-/* Responsive adjustment for smaller screens */
-@media (max-width: 500px) {
-  #theme-toggle {
-    font-size: 0.7rem;
-    padding: 0.25rem 0.6rem;
-  }
-}
-
-/* ==========================
-   Home Button (next to theme toggle)
-========================== */
 #home-button {
-  position: fixed;
-  bottom: 1rem;          /* align with theme toggle */
-  left: 5.5rem;          /* offset so it's right next to toggle */
-  z-index: 1000;
-  padding: 0.35rem 0.75rem;
-  border-radius: 0.4rem;
-  border: none;
-  cursor: pointer;
-  font-size: 0.8rem;
-  background-color: var(--accent);
-  color: #000;
-  font-weight: 700;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  left: 5.5rem; /* offset next to theme toggle */
 }
 
+/* Hover & Active states */
+#theme-toggle:hover,
 #home-button:hover {
   background-color: var(--accent-light);
 }
 
+#theme-toggle:active,
 #home-button:active {
   transform: scale(0.95);
 }
 
 /* Responsive adjustment for smaller screens */
 @media (max-width: 500px) {
+  #theme-toggle,
   #home-button {
     font-size: 0.7rem;
     padding: 0.25rem 0.6rem;
+  }
+
+  #home-button {
     left: 4.8rem; /* slightly closer on smaller screens */
   }
 }
+
 
