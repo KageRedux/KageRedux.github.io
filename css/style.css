@@ -190,18 +190,18 @@ button:active {
 }
 
 /* ==========================
-   Theme Toggle Button
+   Theme Toggle & Home Button Placement
 ========================== */
 #theme-toggle {
-  position: fixed;      /* always visible */
-  bottom: 1rem;         /* distance from bottom */
-  left: 1rem;           /* distance from left */
-  z-index: 1000;        /* stay above other elements */
-  padding: 0.4rem 0.8rem; /* compact size */
+  position: fixed;         /* always visible */
+  bottom: 1rem;            /* distance from bottom */
+  left: 1rem;              /* distance from left */
+  z-index: 1000;           /* stay above other elements */
+  padding: 0.35rem 0.75rem;/* slightly smaller, thumb-friendly */
   border-radius: 0.4rem;
   border: none;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   background-color: var(--accent);
   color: #000;
   font-weight: 700;
@@ -216,11 +216,47 @@ button:active {
   transform: scale(0.95);
 }
 
-/* Mobile tweak */
+/* Responsive adjustment for smaller screens */
 @media (max-width: 500px) {
   #theme-toggle {
-    font-size: 0.75rem;
-    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+  }
+}
+
+/* ==========================
+   Home Button (next to theme toggle)
+========================== */
+#home-button {
+  position: fixed;
+  bottom: 1rem;          /* align with theme toggle */
+  left: 5.5rem;          /* offset so it's right next to toggle */
+  z-index: 1000;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  background-color: var(--accent);
+  color: #000;
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#home-button:hover {
+  background-color: var(--accent-light);
+}
+
+#home-button:active {
+  transform: scale(0.95);
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 500px) {
+  #home-button {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+    left: 4.8rem; /* slightly closer on smaller screens */
   }
 }
 
