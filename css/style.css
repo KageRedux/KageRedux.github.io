@@ -190,6 +190,47 @@ button:active {
 }
 
 /* ==========================
+   Height Converter Buttons
+========================== */
+.converter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.converter-buttons button {
+  flex: 1 1 auto;
+  min-width: 140px;
+  background-color: var(--card-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.converter-buttons button:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+.converter-buttons button:active {
+  transform: scale(0.96);
+}
+
+/* Compact layout for mobile */
+@media (max-width: 500px) {
+  .converter-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* ==========================
    Theme Toggle & Home Button Placement
 ========================== */
 #theme-toggle,
@@ -242,4 +283,27 @@ button:active {
   #home-button {
     left: 4.8rem; /* slightly closer on smaller screens */
   }
+}
+
+/* ==========================
+   Site Banner (W.I.P.)
+========================== */
+.site-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 0.5rem;
+  background-color: rgba(107, 227, 255, 0.15); /* subtle cyan glow */
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  backdrop-filter: blur(4px);
+  border-top: 1px solid var(--accent);
+  z-index: 999;
+}
+
+.site-banner strong {
+  color: var(--accent);
+  font-weight: 700;
 }
