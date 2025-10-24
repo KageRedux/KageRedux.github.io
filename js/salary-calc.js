@@ -1,27 +1,16 @@
 // Wrap everything in DOMContentLoaded to ensure elements exist
 document.addEventListener("DOMContentLoaded", () => {
-  const calcButton = document.getElementById("calculate-btn");
-  const acknowledgeBox = document.getElementById("acknowledge-limitations");
+  // Grab all relevant input elements
+  const typeInput = document.getElementById("salary-type");
+  const amountInput = document.getElementById("amount");
+  const hoursInput = document.getElementById("hours-per-week");
   const resultDiv = document.getElementById("result");
 
-  // Ensure button starts disabled
-  calcButton.disabled = true;
-  calcButton.style.opacity = "0.6";
-  calcButton.style.cursor = "not-allowed";
-
-  // Checkbox toggles the calculate button
-  acknowledgeBox.addEventListener("change", () => {
-    const isChecked = acknowledgeBox.checked;
-    calcButton.disabled = !isChecked;
-    calcButton.style.opacity = isChecked ? "1" : "0.6";
-    calcButton.style.cursor = isChecked ? "pointer" : "not-allowed";
-  });
-
-  // Main salary calculation logic
-  calcButton.addEventListener("click", () => {
-    const type = document.getElementById("salary-type").value;
-    const amount = parseFloat(document.getElementById("amount").value);
-    const hoursPerWeek = parseFloat(document.getElementById("hours-per-week").value) || 40;
+  // Main salary calculation function
+  function calculateSalary() {
+    const type = typeInput.value;
+    const amount = parseFloat(amountInput.value);
+    const hoursPerWeek = parseFloat(hoursInput.value) || 40;
 
     // Validate input
     if (isNaN(amount) || amount <= 0) {
@@ -50,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const weekly = annual / 52;
     const hourly = weekly / hoursPerWeek;
 
-    // Display results
+    // Display results with disclaimer
     resultDiv.innerHTML = `
       <div style="margin-top:1rem; line-height:1.6;">
         <strong>Estimated Salary Breakdown:</strong><br>
@@ -61,5 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <small style="color:gray;">Note: Overtime, taxes, and bonuses not included.</small>
       </div>
     `;
-  });
+  }
+
+  // Attach event listeners to all inputs to auto-update results
+  typeInput.addEventListener("change", calculateSalary);
+  amountInput.addEventListener("input", calculateSalary);
+  hoursInput.addEventListener("input", calculateSalary);
 });
