@@ -307,3 +307,38 @@ button:active {
   color: var(--accent);
   font-weight: 700;
 }
+
+/* ==========================
+    Converter Links
+========================== */
+.converter-link {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.converter-link a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  background-color: var(--accent);
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.converter-link a:hover {
+  background-color: var(--accent-light);
+}
+
+.converter-link a:active {
+  transform: scale(0.95);
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 500px) {
+  .converter-link a {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
