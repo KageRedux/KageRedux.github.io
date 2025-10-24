@@ -1,33 +1,38 @@
 # KR's Code Space 🖤
 
-Welcome to KR's coding playground! This repository hosts interactive projects built with HTML, CSS, and JavaScript. Explore, tinker, and learn from each project at your own pace.  
+Welcome to KR's coding playground — a growing collection of interactive web tools built with **HTML, CSS, and JavaScript**.  
+Each project is designed to be quick, practical, and just a little bit poetic.
 
 ---
 
-## Featured Projects 🚀
+## 🚀 Featured Projects
 
-| Emoji | Project | Description | Link |
-|-------|---------|-------------|------|
-| 💰 | **Budget Calculator** | Quickly estimate your budget with adaptive comfort & buffer calculations. PDF export included! | [Open](projects/budget-calc/index.html "Click to open the Budget Calculator!") |
-| 📏 | **Height Converter** | Convert between metric and imperial units in real time. | [Open](projects/height-converter/index.html "Click to open the Height Converter!") |
-| 🧮 | **Salary Calculator** | Python tool for calculating salary after taxes and deductions. | [Open](projects/salary-calculator/index.html "Click to open the Salary Calculator!") |
-
-> *Tip:* Hover over the project emojis or links in your browser preview for a playful “interactive” vibe 😏  
+| Emoji | Project | Description |
+|:------:|:---------|:-------------|
+| 💰 | **Budget Calculator** | Quickly estimate your budget with adaptive comfort and buffer calculations. PDF export included! |
+| 📏 | **Height Converter** | Convert between metric and imperial units in real time. |
+| ⚖️ | **Weight Converter** | Instantly switch between kilograms and pounds — simple, fast, accurate. |
 
 ---
 
-## How to Use
+## 🧭 How to Use
 
-1. Click a project link above.  
-2. Enter your data or values in the inputs provided.  
-3. Interact with the project UI.  
-4. For the Budget Calculator, use the PDF button or save/load features to manage your data.  
+1. Visit the project through the main site or open the `/projects/` folder.  
+2. Enter your data — converters update live as you type.  
+3. Save or export results where supported.  
+4. Tinker, explore, and learn — that’s what this space is for.
+
+---
+
+## 🚧 Work in Progress
+
+This site and repo are both *living projects*.  
+Expect frequent updates, UI polish, and the occasional spontaneous refactor.  
+Bugs may appear briefly, then mysteriously vanish — such is the cycle of creation.
 
 ---
 
 Built with curiosity & tea 🍵  
 
-©2025 KR (A.K.A KageRedux / KRDX, including lowercase variants)  
-Licensed under the [MIT License](./LICENSE)  
-
-Feel free to explore and learn from the projects, but please respect the original author.
+©2025 **KR** (aka *KageRedux / KRDX*, lowercase accepted).  
+Licensed under the [MIT License](./LICENSE).  

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weight Converter </title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body>
+    <button id="theme-toggle">🌙</button>
+    <button id="home-button" onclick="window.location.href='https://kageredux.github.io/'">🏠</button>
+    
+    <h1>⚖️ Weight Converter</h1>
+    <p class="notice">
+      Convert between metric (kg) and imperial (lbs) instantly. <br>
+      Built for quick checks and mobile use.
+    </p>
+
+    <div class="container">
+      <label> Weight in kilograms </label>
+      <input type="number" id="weight-kg" placeholder="e.g. 70" inputmode="decimal">
+
+      <label> Weight in pounds </label>
+      <input type="number" id="weight-lb" placeholder="e.g. 154" inputmode="decimal">
+
+      <div class="result" id="result"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/js/theme.js"></script>
+    <script src="/js/weight-conv.js"></script>
+  </body>
+</html>
