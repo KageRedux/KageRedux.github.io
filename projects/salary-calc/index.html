@@ -4,44 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Salary Calculator </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
 
   <body>
-    <button id="theme-toggle"> 🌙 </button>
-    <button id="home-button" onclick="window.location.href='https://kageredux.github.io'"> 🏠 </button>
-
+    <button id="theme-toggle">🌙</button>
+    <button id="home-button" onclick="window.location.href='https://kageredux.github.io/'">🏠</button>
+    
     <h1> 💼 Salary Calculator </h1>
     <p class="notice">
-      Calculate your gross income based on hourly rate, hours per day, and hours per week. <br>
-      Overtime is calculated automatically if weekly hours exceed 40.
+      Convert your hourly, weekly, or monthly pay into annual income — or vice versa. <br>
+      Fast, accurate, and mobile-friendly.
     </p>
 
     <div class="container">
-      <label> Name </label>
-      <input type="text" id="name" placeholder="Enter your name">
+      <label> Salary Type </label>
+      <select id="salary-type">
+        <option value="hourly">Hourly</option>
+        <option value="weekly">Weekly</option>
+        <option value="monthly">Monthly</option>
+        <option value="annual">Annual</option>
+      </select>
 
-      <label> Hourly Rate ($) </label>
-      <input type="number" id="rate" placeholder="e.g. 25" inputmode="decimal">
+      <label> Amount ($) </label>
+      <input type="number" id="amount" placeholder="e.g. 25" inputmode="decimal">
 
-      <label> Hours per Day (🕑) </label>
-      <input type="number" id="hours-day" placeholder="e.g. 8" inputmode="decimal">
+      <label> Hours per Week (for Hourly pay) </label>
+      <input type="number" id="hours-per-week" placeholder="e.g. 40" inputmode="numeric">
 
-      <label> Hours per Week (📆) </label>
-      <input type="number" id="hours-week" placeholder="e.g. 40" inputmode="decimal">
+      <button id="calculate-btn"> Calculate </button>
 
-      <button id="calc-salary"> Calculate Salary </button>
-
-      <button id="toggle-view"> Switch to Full View </button>
-
-      <div class="result" id="result"></div>
+      <div class="result" id="result" style="margin-top: 1.5rem;"></div>
 
       <div class="converter-link" style="text-align:center; margin-top:1rem;">
         🔄 <a href="/projects/budget-calc/index.html"> Go to Budget Calculator </a>
       </div>
     </div>
 
-    <!-- JavaScript -->
     <script src="/js/theme.js"></script>
     <script src="/js/salary-calc.js"></script>
   </body>
