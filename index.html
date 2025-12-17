@@ -3,54 +3,67 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> KR Code Space </title>
+        <title>KR's Code Blog</title>
         <link rel="stylesheet" href="/css/style.css">
     </head>
 
     <body>
+        <!-- <button id="theme-toggle"> 🌙 </button> -->
 
         <header>
-            <h1> KR’s Code Space </h1>
-
-            <nav>
-                <button class="nav-toggle">☰</button>
-                    <ul class="nav-links">
-                        <li><a href="/"> Home </a></li>
-                        <li><a href="projects/projects.html"> Projects </a></li>
-                        <li><a href="blog/blog.html"> Writing </a></li>
-                    </ul>
-            </nav>
+            <h1>KR's Code Blog</h1>
+            <!-- <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav> -->
         </header>
 
         <main>
-            <!-- Thesis / Intent -->
             <section id="intro">
-                <p class="lead">
-                    A couple of small, thoughtful tools that prioritize user experience and simplicity. 
-                </p>
+                <h2>Welcome to My Playground</h2>
+                <p>Each project here has its own UI – explore, tinker, and enjoy. Now presented in a blog format for easier reading.</p>
             </section>
+            
+            <section id="projects">
+                <h2>Recent Posts</h2>
+                <div class="project-grid">
+                    
+                    <article class="project-card">
+                        <h3><a href="projects/budget-calc/index.html">💰 Budget Calculator</a></h3>
+                        <p>Simple budgeting app built with HTML, CSS, and JS. Originally designed in PY.</p>
+                        <a class="read-more" href="projects/budget-calc/index.html">View Tool →</a>
+                    </article>
 
-            <!-- Latest writing -->
-            <section id="writing">
-                <h2> Latest Writing </h2>
+                    <article class="project-card">
+                        <h3><a href="projects/height-conv/index.html">📏 Height Converter</a></h3>
+                        <p>Converts between metric and imperial units in real time.</p>
+                        <a class="read-more" href="projects/height-conv/index.html">View Tool →</a>
+                    </article>
 
-                <ul class="post-list">
-                    <li><a href="#"> Why Small Tools Matter </a></li>
-                    <li><a href="#"> Minimalism Is a UX Choice </a></li>
-                    <li><a href="#"> Building Without Overthinking </a></li>
-                </ul>
+                    <article class="project-card">
+                        <h3><a href="projects/weight-conv/index.html">⚖️ Weight Converter</a></h3>
+                        <p>Instantly convert between kilograms and pounds.</p>
+                        <a class="read-more" href="projects/weight-conv/index.html">View Tool →</a>
+                    </article>
 
-                <p><a href="blog/blog.html"> View all writing → </a></p>
+                    <article class="project-card">
+                        <h3><a href="projects/salary-calc/index.html">💼 Salary Calculator</a></h3>
+                        <p>Calculate your gross income based on hourly rate, hours per day, and hours per week.</p>
+                        <a class="read-more" href="projects/salary-calc/index.html">View Tool →</a>
+                    </article>
+
+                </div>
             </section>
         </main>
 
         <footer>
-            <p>©2025 KR — Built with tea & curiosity 🍵</p>
-
-            <p> 🚧 This site is a <strong>Work In Progress</strong> — expect occasional bugs, sparks, and brilliance.</p>
+            <p>©2025 KR - Built with Tea & Curiosity 🍵</p>
+            <p>🚧 This site is a <strong>Work In Progress</strong> — expect occasional bugs, sparks, and brilliance.</p>
         </footer>
 
         <script src="script.js"></script>
     </body>
-
 </html>
