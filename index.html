@@ -2,63 +2,50 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device width, initial-scale=1.0">
-        <title> KR Code space </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> KR Code Space </title>
         <link rel="stylesheet" href="/css/style.css">
     </head>
 
     <body>
-        <!-- <button id="theme-toggle"> 🌙 </button> -->
 
         <header>
-            <h1> KR's Code Space </h1>
-            <!-- <nav>
-                <ul>
-                    <li> <a href="#"> Home </a></li>
-                    <li> <a href="#"> Projects </a></li>
-                    <li> <a href="#"> About </a></li>
-                </ul>
-            </nav> -->
+            <h1> KR’s Code Space </h1>
+
+            <nav>
+                <button class="nav-toggle">☰</button>
+                    <ul class="nav-links">
+                        <li><a href="/"> Home </a></li>
+                        <li><a href="/projects.html"> Projects </a></li>
+                        <li><a href="/blog.html"> Writing </a></li>
+                    </ul>
+            </nav>
         </header>
 
         <main>
+            <!-- Thesis / Intent -->
             <section id="intro">
-                <h2> Welcome to My Playground </h2>
-                <p> Each Project here has it's own UI - explore, tinker, and enjoy. </p>
+                <p class="lead">
+                    A couple of small, thoughtful tools that prioritize user experience and simplicity. 
+                </p>
             </section>
-            
-            <section id="projects">
-                <h2> Featured Projects </h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3><a href="projects/budget-calc/index.html">💰 Budget Calculator </a></h3>
-                        <p> Simple budgeting app built with HTML, CSS, and JS. Originally designed in PY. </p>
-                        <!-- <a href="projects/budget-calc/index.html"> View Project (💰) </a> -->
-                    </div>
 
-                    <div class="project-card">
-                        <h3><a href="projects/height-conv/index.html">📏 Height Converter </a></h3>
-                        <p> Converts between metric and imperial units in real time. </p>
-                        <!-- <a href="projects/height-conv/index.html"> View project (📏) </a> -->
-                    </div>
+            <!-- Latest writing -->
+            <section id="writing">
+                <h2> Latest Writing </h2>
 
-                    <div class="project-card">
-                        <h3><a href="projects/weight-conv/index.html">⚖️ Weight Converter </a></h3>
-                        <p> Instantly convert between kilograms and pounds. </p>
-                        <!-- <a href="projects/weight-conv/index.html"> View project (⚖️) </a> -->
-                    </div>
+                <ul class="post-list">
+                    <li><a href="#"> Why Small Tools Matter </a></li>
+                    <li><a href="#"> Minimalism Is a UX Choice </a></li>
+                    <li><a href="#"> Building Without Overthinking </a></li>
+                </ul>
 
-                    <div class="project-card">
-                        <h3><a href="projects/salary-calc/index.html">💼 Salary Calculator </a></h3>
-                        <p> Calculate your gross income based on hourly rate, hours per day, and hours per week. </p>
-                        <!-- <a href="projects/salary-calc/index.html"> View project (💼) </a> -->
-                    </div>
-                </div>
+                <p><a href="/blog.html">View all writing →</a></p>
             </section>
         </main>
 
         <footer>
-            <p> ©2025 KR - Built with Tea & Curiosity🍵</p>
+            <p>©2025 KR — Built with tea & curiosity 🍵</p>
 
             <p> 🚧 This site is a <strong>Work In Progress</strong> — expect occasional bugs, sparks, and brilliance.</p>
         </footer>
